@@ -1,0 +1,73 @@
+.app .page-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app .search-input {
+    position: relative;
+}
+
+.app .search-input .search-icon {
+    color: var(--body);
+    position: absolute;
+    font-size: 14px;
+    top: 11px;
+    left: 8px;
+}
+
+.app .search-input input {
+    background: var(--light);
+    padding: 8px 22px 8px 26px;
+    border-radius: 4px;
+    border: 1px solid var(--body);
+    width: 17rem;
+    font-size: 14px;
+    outline: none;
+}
+
+.app .search-input input:focus {
+    border-color: var(--primary);
+}
+
+.app .filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.app .filters-section .filter-wrapper {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid var(--body);
+    cursor: pointer;
+}
+
+.app .filters-section .filter-wrapper .filter-label {
+    color: var(--body);
+    position: absolute;
+    font-size: 10px;
+    background: var(--light);
+    top: -8px;
+    left: 6px;
+    padding-inline: 2px;
+    font-weight: 600;
+}
+
+.app .filters-section .filter-wrapper .filter-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 20px;
+}
+
+.app .filters-section .filter-wrapper .filter-content .title,
+.app .filters-section .filter-wrapper .filter-content ion-icon {
+    color: var(--body);
+    font-size: 14px;
+    font-weight: 600;
+}

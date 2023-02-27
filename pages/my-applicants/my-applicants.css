@@ -1,0 +1,99 @@
+.app .page-body .card {
+    width: 192px;
+    height: 357px;
+    background: var(--light);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.app .page-body .card .card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 192px;
+    border-radius: 6px 6px 0 0;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-radius: 6px 6px 0 0;
+}
+
+.app .page-body .card .img1 {
+    background-image: url('../../assets/img1.jpeg');
+}
+
+.app .page-body .card .img2 {
+    background-image: url('../../assets/img2.jpeg');
+}
+
+.app .page-body .card .img3 {
+    background-image: url('../../assets/img3.jpeg');
+}
+
+.app .page-body .card .img4 {
+    background-image: url('../../assets/img4.jpeg');
+}
+
+.app .page-body .card .img5 {
+    background-image: url('../../assets/img5.jpeg');
+}
+
+.app .page-body .card .img6 {
+    background-image: url('../../assets/person.jpeg');
+}
+
+.app .page-body .card .card-details {
+    padding: 8px 14px;
+}
+
+.app .page-body .card .card-details .personal-info {
+    padding-bottom: 8px;
+}
+
+.app .page-body .card .card-details .contact-info,
+.app .page-body .card .card-details .applied-date {
+    padding-block: 8px;
+}
+
+.app .page-body .card .card-details .personal-info,
+.app .page-body .card .card-details .contact-info {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.app .page-body .applicants-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--body-gap);
+}
+
+@media only screen and (max-width: 960px) {
+    .app .page-body .applicants-container {
+        justify-content: center;
+    }
+}
+
+
+.app .page-body .card .card-details .personal-info .name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.app .page-body .card .card-details .personal-info .position {
+    font-size: 14px;
+    color: var(--body);
+}
+
+
+.app .page-body .card .card-details .contact-info div,
+.app .page-body .card .card-details .applied-date {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--body);
+}
+
+.app .page-body .card .card-details .info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

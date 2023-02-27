@@ -1,0 +1,49 @@
+:root {
+    --light: #FFFFFF;
+    --body: #212529;
+    --primary: #0088DD;
+    --light-gray: #F2F2F2;
+    --body-bg: #F7FBFF;
+    --page-padding: 2.75rem;
+    --body-gap: 30px;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--body-bg);
+}
+
+body.dark {
+    --light: #212529;
+    --body: #FFFFFF;
+    --primary: #0088DD;
+    --light-gray: #343434;
+    --body-bg: #2D3034;
+}
+
+.app .line {
+    border-right: 2px solid;
+    height: 20px;
+    margin: auto 7px;
+}
+
+.app .page-body {
+    padding: var(--body-gap) var(--page-padding);
+}
+
+.app .text-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app ion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
