@@ -75,3 +75,13 @@
     border-bottom: 1px solid var(--light-gray);
     padding-bottom: 1rem;
 }
+
+@media only screen and (max-width: 390px) {
+    .app .header {
+        padding-inline: var(--mobile-page-padding);
+    }
+
+    .app .page-head {
+        padding-inline: var(--mobile-page-padding);
+    }
+}

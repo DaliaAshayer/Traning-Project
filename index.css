@@ -6,6 +6,7 @@
     --body-bg: #F7FBFF;
     --page-padding: 2.75rem;
     --body-gap: 30px;
+    --mobile-page-padding: 1.5rem;
 }
 
 * {
@@ -46,4 +47,10 @@ body.dark {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 390px) {
+    .app .page-body {
+        padding: var(--body-gap) var(--mobile-page-padding);
+    }
 }
