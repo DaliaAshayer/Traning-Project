@@ -24,7 +24,7 @@
     padding: 8px 22px 8px 26px;
     border-radius: 4px;
     border: 1px solid var(--body);
-    width: 17rem;
+    width: 25rem;
     font-size: 14px;
     outline: none;
 }
@@ -70,4 +70,10 @@
     color: var(--body);
     font-size: 14px;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 680px) {
+    .app .search-input input {
+        width: 17rem;
+    }
 }
