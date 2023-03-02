@@ -22,7 +22,7 @@
 .app .search-input input {
     background: var(--light);
     padding: 8px 22px 8px 26px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid var(--body);
     width: 25rem;
     font-size: 14px;
@@ -36,13 +36,28 @@
 .app .filters-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px;
 }
 
 .app .filters-section .filter-wrapper {
     position: relative;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid var(--body);
+    cursor: pointer;
+    width: 9rem;
+}
+
+.app .filters-section .date-filter-wrapper {
+    border: none;
+}
+
+.app .filters-section .date-filter-wrapper input {
+    padding: 8px;
+    border: 1px solid var(--body);
+    background: var(--light);
+    color: var(--body);
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -54,7 +69,7 @@
     top: -8px;
     left: 6px;
     padding-inline: 2px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .app .filters-section .filter-wrapper .filter-content {
@@ -69,11 +84,19 @@
 .app .filters-section .filter-wrapper .filter-content ion-icon {
     color: var(--body);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 680px) {
     .app .search-input input {
         width: 17rem;
     }
+
+    .app .sort-by-filter {
+        display: none;
+    }
+}
+
+body.dark .date-filter-wrapper input {
+    color-scheme: dark;
 }

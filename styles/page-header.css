@@ -39,6 +39,7 @@
 .app .header .account-info .name {
     margin-inline: 6px;
     color: var(--body);
+    font-weight: 500;
 }
 
 .app .header .account-info .caret-icon {
