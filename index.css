@@ -49,11 +49,6 @@ body.dark {
     align-items: center;
 }
 
-.app .divider {
-    width: 100%;
-    height: 12px;
-}
-
 .app .styled-scrollbar::-webkit-scrollbar {
     width: 4px;
     height: 4px;

@@ -1,9 +1,8 @@
 .app .page-body .card {
-    width: 192px;
-    height: 357px;
     background: var(--light);
     border-radius: 6px;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .app .page-body .card:visited {
@@ -47,27 +46,19 @@
 }
 
 .app .page-body .card .card-details {
-    padding: 8px 14px;
+    padding: 16px 10px;
 }
 
-.app .page-body .card .card-details .personal-info {
-    padding-bottom: 8px;
-}
-
-.app .page-body .card .card-details .contact-info,
-.app .page-body .card .card-details .applied-date {
-    padding-block: 8px;
-}
-
-.app .page-body .card .card-details .personal-info,
-.app .page-body .card .card-details .contact-info {
-    border-bottom: 1px solid var(--light-gray);
+.app .page-body .card .card-details hr {
+    color: var(--light-gray);
+    opacity: 0.3;
 }
 
 .app .page-body .applicants-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--body-gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-gap: 2rem;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 960px) {
@@ -86,6 +77,7 @@
 .app .page-body .card .card-details .personal-info .position {
     font-size: 14px;
     color: var(--body);
+    font-weight: 500;
 }
 
 

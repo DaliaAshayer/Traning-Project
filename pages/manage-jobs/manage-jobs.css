@@ -1,23 +1,21 @@
 :root {
     --ams-col-width: 20rem;
-    --ams-col-mobile-width: 17rem;
 }
 
-.app.ams-page .ams-cols-container {
+.app.manage-job-page .manage-job-cols-container {
     display: flex;
     gap: 20px;
     overflow-x: auto;
-    max-width: calc(100% - var(--page-padding));
     height: calc(90vh - 12rem);
     overflow-y: hidden;
 }
 
-.app.ams-page .ams-cols-container .ams-col {
+.app.manage-job-page .manage-job-cols-container .manage-job-col {
     min-width: var(--ams-col-width);
     width: var(--ams-col-width);
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-label {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-label {
     display: flex;
     justify-content: space-between;
     padding: 8px 15px;
@@ -29,63 +27,65 @@
     border-left: 1px solid var(--light-gray);
     border-right: 1px solid var(--light-gray);
     background-color: var(--light);
+    font-size: 14px;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-label span {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-label span {
     color: var(--body);
     font-weight: 600;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-label .applicants-badge {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-label .applicants-badge {
     background: var(--light-gray);
-    padding: 2px 12px;
+    padding: 2px 8px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content {
     overflow-y: auto;
     max-height: calc(90vh - 16rem);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 7px;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content .applicant-block {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block {
     cursor: pointer;
-    height: 7rem;
+    min-height: 3rem;
     display: flex;
     background-color: var(--light);
     border-radius: 6px;
     align-items: center;
-    padding-inline: 12px;
+    padding: 10px;
     gap: 10px;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content .applicant-block img {
-    width: 4rem;
-    height: 4rem;
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block img {
+    width: 3rem;
+    height: 3rem;
     border-radius: 4rem;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content .applicant-block .applicant-details {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block .applicant-details {
     max-width: calc(100% - 4rem);
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content .applicant-block .applicant-details .name {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block .applicant-details .name {
     color: var(--primary);
     font-weight: 600;
+    font-size: 1rem;
 }
 
-.app.ams-page .ams-cols-container .ams-col .ams-col-content .applicant-block .applicant-details .position {
+.app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block .applicant-details .position {
     color: var(--body);
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 680px) {
-    .app.ams-page .ams-cols-container {
+    .app.manage-job-page .manage-job-cols-container {
         max-width: calc(100% - var(--mobile-page-padding));
-    }
-
-    .app.ams-page .ams-cols-container .ams-col {
-        min-width: var(--ams-col-mobile-width);
-        width: var(--ams-col-mobile-width);
     }
 }
