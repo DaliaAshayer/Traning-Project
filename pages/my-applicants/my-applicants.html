@@ -5,6 +5,8 @@
     <title>Recruiter Hub | My Applicants</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="./../../index.css" rel="stylesheet">
     <link href="./../../styles/page-header.css" rel="stylesheet">
     <link href="./../../styles/page-filters.css" rel="stylesheet">
@@ -17,385 +19,440 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app">
-    <header class="header">
+<div class="container-fluid app px-0">
+    <header class="d-flex justify-content-between align-items-center">
         <div class="logo">
         </div>
-        <div class="account-info">
-            <img src="./../../assets/person.jpeg" class="profile-img" alt="profile-img">
-            <span class="name text-truncate" title="James Appelton">James Appelton</span>
-            <span class="caret-icon">
-                <ion-icon name="caret-down-outline"></ion-icon>
-            </span>
+        <div class="dropdown">
+            <a class="account-info d-flex align-items-center p-1"
+               role="button"
+               href="#"
+               id="accountInfoDropdownMenuBtn"
+               aria-expanded="false"
+               data-bs-toggle="dropdown">
+                <img src="./../../assets/person.jpeg" class="profile-img" alt="profile-img">
+                <span class="name text-truncate mx-2" title="James Appelton">James Appelton</span>
+                <span class="caret-icon me-2">
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </span>
+            </a>
+            <div class="account-dropdown-menu dropdown-menu"
+                 aria-labelledby="accountInfoDropdownMenuBtn">
+                <div class="d-flex align-items-center">
+                    <img src="./../../assets/person.jpeg" class="dropdown-img me-3" alt="profile-img">
+                    <div class="info-container">
+                        <div class="name text-truncate" title="James Appelton">James Appelton</div>
+                        <div class="email text-truncate" title="james@example.com">james@example.com</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                    <a class="sign-out-action" href="#">Sign Out</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <section class="page-head">
+        <section class="page-head pb-3">
             <div class="page-title">
                 <span>Recruiter Hub</span>
                 <span class="line"></span>
                 <span class="active">My Applicants</span>
             </div>
-            <div class="page-filters">
-                <div class="search-input">
+            <div class="row pt-3 gy-3">
+                <div class="search-input col-sm-12 col-md-6 col-xl-4">
                     <span class="search-icon"><ion-icon name="search-outline"></ion-icon></span>
                     <input type="text" placeholder="Search for applicants">
                 </div>
-                <div class="filters-section">
-                    <div class="filter-wrapper sort-by-filter">
-                        <div class="filter-label">Sort by</div>
-                        <div class="filter-content">
-                            <div class="title">Default</div>
-                            <ion-icon name="chevron-down-outline"></ion-icon>
+                <div class="filters-section col-sm-12 col-md-6 col-xl-8 justify-content-lg-end">
+                    <div class="row justify-content-lg-end gx-2 gy-2">
+                        <div class="col-md-4 col-xl-2 d-none d-md-block">
+                            <div class="filter-wrapper">
+                                <div class="filter-label">Sort by</div>
+                                <div class="filter-content">
+                                    <div class="title">Default</div>
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-wrapper date-filter-wrapper">
-                        <div class="filter-label">From Date</div>
-                        <input type="date"
-                               data-date-format="DD/MM/YYYY"
-                               name="from_date"
-                               value="2023-01-01">
-                    </div>
-                    <div class="filter-wrapper date-filter-wrapper">
-                        <div class="filter-label">To Date</div>
-                        <input type="date"
-                               data-date-format="DD/MM/YYYY"
-                               name="from_date"
-                               value="2023-01-01">
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+                            <div class="filter-wrapper date-filter-wrapper">
+                                <div class="filter-label">From Date</div>
+                                <input type="date"
+                                       class="w-100"
+                                       data-date-format="DD/MM/YYYY"
+                                       name="from_date"
+                                       value="2023-01-01">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+                            <div class="filter-wrapper date-filter-wrapper">
+                                <div class="filter-label">To Date</div>
+                                <input type="date"
+                                       class="w-100"
+                                       data-date-format="DD/MM/YYYY"
+                                       name="from_date"
+                                       value="2023-01-01">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-body">
-            <div class="applicants-container">
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img1"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Lennard Camarillo">Lennard Camarillo</div>
-                            <div class="position">Manager/Bartender</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+        <section class="page-body applicants-cards">
+            <div class="row gx-5 gy-4 justify-content-sm-center justify-content-md-start">
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                   <div>
+                       <a class="applicant-card"
+                          target="_blank"
+                          href="../../pages/manage-jobs/manage-jobs.html">
+                           <div class="card-img img1"></div>
+                           <div class="card-details">
+                               <div class="personal-info">
+                                   <div class="name text-truncate" title="Lennard Camarillo">Lennard Camarillo</div>
+                                   <div class="position">Manager/Bartender</div>
+                               </div>
+                               <hr>
+                               <div class="contact-info">
+                                   <div class="info-wrapper">
+                                       <div>
+                                           <ion-icon name="mail-outline"></ion-icon>
+                                       </div>
+                                       <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                           Lennardcamarillo@yahoo.com
+                                       </div>
+                                   </div>
+                                   <div class="info-wrapper">
+                                       <div>
+                                           <ion-icon name="call-outline"></ion-icon>
+                                       </div>
+                                       <div>+1 800 200 300</div>
+                                   </div>
+                               </div>
+                               <hr>
+                               <div class="applied-date">
+                                   Applied on: Feb 20,2023
+                               </div>
+                           </div>
+                       </a>
+                   </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img2"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="Martina Holloway">Martina Holloway</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    Lennardcamarillo@yahoo.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img2"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Martina Holloway">Martina Holloway</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img3"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img3"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img4"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img4"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img5"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
+                                </div>
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img5"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img6"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
+                                <div class="position">Cashier</div>
                             </div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
-                                </div>
-                            </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img6"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img3"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img3"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img4"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img4"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img5"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img5"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
+                                </div>
+                                <div class="position">Cashier</div>
                             </div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
                                 </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
-                                </div>
-                            </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
-                        </div>
-                    </div>
-                </a>
-                <a class="card"
-                   target="_blank"
-                   href="../../pages/manage-jobs/manage-jobs.html">
-                    <div class="card-img img6"></div>
-                    <div class="card-details">
-                        <div class="personal-info">
-                            <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
-                            <div class="position">Cashier</div>
-                        </div>
-                        <hr>
-                        <div class="contact-info">
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                </div>
-                                <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
-                                    email@test.com
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
                                 </div>
                             </div>
-                            <div class="info-wrapper">
-                                <div>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-                                <div>+1 800 200 300</div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
                             </div>
                         </div>
-                        <hr>
-                        <div class="applied-date">
-                            Applied on: Feb 20,2023
+                    </a>
+                </div>
+                <div class="col-12 col-sm-10 col-md-4 col-lg-3 col-xl-2">
+                    <a class="applicant-card"
+                       target="_blank"
+                       href="../../pages/manage-jobs/manage-jobs.html">
+                        <div class="card-img img6"></div>
+                        <div class="card-details">
+                            <div class="personal-info">
+                                <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
+                                <div class="position">Cashier</div>
+                            </div>
+                            <hr>
+                            <div class="contact-info">
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                    <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
+                                        email@test.com
+                                    </div>
+                                </div>
+                                <div class="info-wrapper">
+                                    <div>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div>+1 800 200 300</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="applied-date">
+                                Applied on: Feb 20,2023
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

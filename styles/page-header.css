@@ -1,19 +1,16 @@
-.app .header {
+.app header {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 3px 0 14px -1px var(--light-gray);
     padding-inline: var(--page-padding);
     background: var(--light);
     height: 68px;
 }
 
-.app .header .logo {
+.app header .logo {
     background-image: url('../assets/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,36 +18,66 @@
     height: 2.125rem
 }
 
-.app .header .account-info {
+.app header .account-info {
     background: var(--light-gray);
-    padding: 2px 8px 2px 2px;
-    display: flex;
-    align-items: center;
-    border-radius: 1rem;
-    cursor: pointer;
+    border-radius: 2rem;
+    text-decoration: none;
 }
 
-.app .header .account-info .profile-img {
+.app header .account-info .profile-img {
     width: 34px;
     height: 34px;
     border-radius: 5rem;
 }
 
-.app .header .account-info .name {
-    margin-inline: 6px;
+.app header .account-info .name {
     color: var(--body);
     font-weight: 500;
 }
 
-.app .header .account-info .caret-icon {
+.app header .account-dropdown-menu .dropdown-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 5px 1px;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.app header .account-dropdown-menu {
+    min-width: 22rem;
+    inset: 3px 0px auto 0px !important;
+    border-radius: 6px;
+    padding: 11px 16px;
+}
+
+.app header .account-dropdown-menu .info-container {
+    width: calc(100% - 5rem);
+}
+
+.app header .account-dropdown-menu .name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.app header .account-dropdown-menu .email {
+    font-size: 12px;
+}
+
+.app header .account-dropdown-menu .sign-out-action {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.app header .account-info .caret-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--body);
-    margin-top: 3px;
 }
 
-.app .header .account-info span {
+.app header .account-info span {
     font-size: 0.88rem;
 }
 
@@ -58,7 +85,6 @@
     padding-inline: var(--page-padding);
     background-color: var(--light);
     padding-top: 84px;
-    padding-bottom: 1rem;
 }
 
 .app .page-head .page-title span {
@@ -78,7 +104,7 @@
 }
 
 @media only screen and (max-width: 390px) {
-    .app .header {
+    .app header {
         padding-inline: var(--mobile-page-padding);
     }
 

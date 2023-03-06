@@ -1,15 +1,17 @@
-.app .page-body .card {
-    background: var(--light);
+.app .page-body.applicants-cards hr {
+    margin: 8px 0;
+}
+
+.app .page-body .applicant-card {
     border-radius: 6px;
     text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
-.app .page-body .card:visited {
+.app .page-body .applicant-card:visited {
     text-decoration: none;
 }
 
-.app .page-body .card .card-img {
+.app .page-body .applicant-card .card-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,37 +23,33 @@
     -moz-border-radius: 6px 6px 0 0;
 }
 
-.app .page-body .card .img1 {
+.app .page-body .applicant-card .img1 {
     background-image: url('../../assets/img1.jpeg');
 }
 
-.app .page-body .card .img2 {
+.app .page-body .applicant-card .img2 {
     background-image: url('../../assets/img2.jpeg');
 }
 
-.app .page-body .card .img3 {
+.app .page-body .applicant-card .img3 {
     background-image: url('../../assets/img3.jpeg');
 }
 
-.app .page-body .card .img4 {
+.app .page-body .applicant-card .img4 {
     background-image: url('../../assets/img4.jpeg');
 }
 
-.app .page-body .card .img5 {
+.app .page-body .applicant-card .img5 {
     background-image: url('../../assets/img5.jpeg');
 }
 
-.app .page-body .card .img6 {
+.app .page-body .applicant-card .img6 {
     background-image: url('../../assets/person.jpeg');
 }
 
-.app .page-body .card .card-details {
+.app .page-body .applicant-card .card-details {
     padding: 16px 10px 20px 10px;
-}
-
-.app .page-body .card .card-details hr {
-    color: var(--light-gray);
-    opacity: 0.3;
+    background: var(--light);
 }
 
 .app .page-body .applicants-container {
@@ -68,27 +66,27 @@
 }
 
 
-.app .page-body .card .card-details .personal-info .name {
+.app .page-body .applicant-card .card-details .personal-info .name {
     font-size: 15px;
     font-weight: 600;
     color: var(--primary);
 }
 
-.app .page-body .card .card-details .personal-info .position {
+.app .page-body .applicant-card .card-details .personal-info .position {
     font-size: 14px;
     color: var(--body);
     font-weight: 500;
 }
 
 
-.app .page-body .card .card-details .contact-info div,
-.app .page-body .card .card-details .applied-date {
+.app .page-body .applicant-card .card-details .contact-info div,
+.app .page-body .applicant-card .card-details .applied-date {
     font-size: 13px;
     font-weight: 300;
     color: var(--body);
 }
 
-.app .page-body .card .card-details .info-wrapper {
+.app .page-body .applicant-card .card-details .info-wrapper {
     display: flex;
     align-items: center;
     gap: 6px;

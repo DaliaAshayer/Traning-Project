@@ -71,3 +71,8 @@ body.dark {
         padding: var(--body-gap) var(--mobile-page-padding);
     }
 }
+
+.app hr {
+    color: var(--light-gray);
+    opacity: 1;
+}
