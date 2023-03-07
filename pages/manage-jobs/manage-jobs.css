@@ -3,7 +3,6 @@
 }
 
 .app.manage-job-page .manage-job-cols-container {
-    display: flex;
     gap: 20px;
     overflow-x: auto;
     height: calc(90vh - 12rem);
@@ -16,10 +15,7 @@
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-label {
-    display: flex;
-    justify-content: space-between;
     padding: 8px 15px;
-    align-items: center;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-top: 5px solid var(--primary);
