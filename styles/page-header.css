@@ -47,6 +47,7 @@
     min-width: 22rem;
     border-radius: 6px;
     padding: 11px 16px;
+    background: var(--light);
 }
 
 .app header .account-dropdown-menu .info-container {
@@ -56,10 +57,12 @@
 .app header .account-dropdown-menu .name {
     font-weight: 600;
     font-size: 16px;
+    color: var(--body);
 }
 
 .app header .account-dropdown-menu .email {
     font-size: 12px;
+    color: var(--body);
 }
 
 .app header .account-dropdown-menu .sign-out-action {
