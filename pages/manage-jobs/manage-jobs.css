@@ -41,8 +41,6 @@
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content {
     overflow-y: auto;
     max-height: calc(90vh - 16rem);
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     margin-top: 7px;
 }

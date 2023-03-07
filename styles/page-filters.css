@@ -1,28 +1,24 @@
 .app .search-input {
-    position: relative;
+    border: 1px solid var(--body);
+    border-radius: 8px;
 }
 
 .app .search-input .search-icon {
     color: var(--body);
-    position: absolute;
     font-size: 14px;
-    top: 11px;
-    left: 18px;
 }
 
 .app .search-input input {
     background: var(--light);
-    padding: 8px 22px 8px 26px;
-    border-radius: 6px;
-    border: 1px solid var(--body);
+    padding: 8px;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     width: 100%;
     font-size: 14px;
     outline: none;
 }
 
-.app .search-input input:focus {
-    border-color: var(--primary);
-}
 .app .filters-section .filter-wrapper {
     position: relative;
     border-radius: 6px;
