@@ -54,20 +54,6 @@
     padding: 16px 14px 20px 14px;
 }
 
-.app .page-body .applicants-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-    grid-gap: 2rem;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 960px) {
-    .app .page-body .applicants-container {
-        justify-content: center;
-    }
-}
-
-
 .app .page-body .applicant-card .card-details .personal-info .name {
     font-size: 15px;
     font-weight: 600;

@@ -40,7 +40,7 @@
     height: 4rem;
     border-radius: 5rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 5px 1px;
-    border: 1px solid rgba(0, 0, 0, .05);
+    border: 2px solid rgba(0, 0, 0, .05);
 }
 
 .app header .account-dropdown-menu {

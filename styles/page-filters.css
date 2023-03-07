@@ -51,13 +51,6 @@
     font-weight: 500;
 }
 
-.app .filters-section .filter-wrapper .filter-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-}
-
 .app .filters-section .filter-wrapper .filter-content .title,
 .app .filters-section .filter-wrapper .filter-content ion-icon {
     color: var(--body);
