@@ -53,18 +53,19 @@
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block {
     cursor: pointer;
-    min-height: 3rem;
+    min-height: 5rem;
     display: flex;
     background-color: var(--light);
     border-radius: 6px;
     align-items: center;
     padding: 10px;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 5px;
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
     border-radius: 4rem;
 }
 
@@ -75,13 +76,13 @@
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block .applicant-details .name {
     color: var(--primary);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block .applicant-details .position {
     color: var(--body);
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 680px) {

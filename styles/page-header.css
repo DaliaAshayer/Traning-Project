@@ -45,7 +45,6 @@
 
 .app header .account-dropdown-menu {
     min-width: 22rem;
-    inset: 3px 0px auto 0px !important;
     border-radius: 6px;
     padding: 11px 16px;
 }
@@ -91,6 +90,7 @@
     font-weight: 600;
     color: var(--body);
     font-size: 1.25rem;
+    white-space: nowrap;
 }
 
 .app .page-head .page-title .active {

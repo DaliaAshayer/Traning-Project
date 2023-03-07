@@ -5,6 +5,9 @@
 .app .page-body .applicant-card {
     border-radius: 6px;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    display: block;
+    background: var(--light);
 }
 
 .app .page-body .applicant-card:visited {
@@ -48,8 +51,7 @@
 }
 
 .app .page-body .applicant-card .card-details {
-    padding: 16px 10px 20px 10px;
-    background: var(--light);
+    padding: 16px 14px 20px 14px;
 }
 
 .app .page-body .applicants-container {
