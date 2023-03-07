@@ -2,6 +2,10 @@
     margin: 8px 0;
 }
 
+.app .page-body .applicants-row {
+    --bs-gutter-x: 1.875rem;
+}
+
 .app .page-body .applicant-card {
     border-radius: 6px;
     text-decoration: none;

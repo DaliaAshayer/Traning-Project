@@ -5,7 +5,6 @@
 .app.manage-job-page .manage-job-cols-container {
     gap: 20px;
     overflow-x: auto;
-    height: calc(90vh - 12rem);
     overflow-y: hidden;
 }
 
