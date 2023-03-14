@@ -5,8 +5,10 @@
     <title>Recruiter Hub | My Applicants</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
     <link href="./../../index.css" rel="stylesheet">
     <link href="./../../styles/page-header.css" rel="stylesheet">
     <link href="./../../styles/page-filters.css" rel="stylesheet">
@@ -15,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -31,9 +32,11 @@
                aria-expanded="false"
                data-bs-toggle="dropdown">
                 <img src="./../../assets/person.jpeg" class="profile-img" alt="profile-img">
-                <span class="name text-truncate mx-2" title="James Appelton">James Appelton</span>
-                <span class="caret-icon me-2">
-                  <ion-icon name="caret-down-outline"></ion-icon>
+                <span class="name text-truncate mx-2 fw-normal" title="James Appelton">James Appelton</span>
+                <span class="caret-icon me-2 d-flex justify-content-center align-items-center">
+                  <ion-icon name="caret-down-outline"
+                            class="d-flex justify-content-center align-items-center">
+                  </ion-icon>
                 </span>
             </a>
             <div class="account-dropdown-menu dropdown-menu"
@@ -41,28 +44,33 @@
                 <div class="d-flex align-items-center">
                     <img src="./../../assets/person.jpeg" class="dropdown-img me-3" alt="profile-img">
                     <div class="info-container">
-                        <div class="name text-truncate" title="James Appelton">James Appelton</div>
+                        <div class="name text-truncate fw-semibold" title="James Appelton">James Appelton</div>
                         <div class="email text-truncate" title="james@example.com">james@example.com</div>
                     </div>
                 </div>
                 <hr>
                 <div class="d-flex justify-content-end">
-                    <a class="sign-out-action" href="#">Sign Out</a>
+                    <a class="sign-out-action fw-semibold" href="#">Sign Out</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <section class="page-head pb-3">
-            <div class="page-title">
-                <span>Recruiter Hub</span>
+            <h1 class="page-title d-flex">
+                <span class="fw-semibold">Recruiter Hub</span>
                 <span class="line"></span>
-                <span class="active">My Applicants</span>
-            </div>
-            <div class="row pt-3 gy-3">
+                <span class="active fw-semibold">My Applicants</span>
+            </h1>
+            <hr>
+            <div class="row gy-3">
                 <div class="col-md-6 col-xl-4">
                     <div class="search-input d-flex align-items-center ">
-                        <span class="search-icon ms-2"><ion-icon name="search-outline"></ion-icon></span>
+                        <span class="search-icon ms-2">
+                            <ion-icon name="search-outline"
+                                      class="d-flex justify-content-center align-items-center">
+                            </ion-icon>
+                        </span>
                         <input type="text" placeholder="Search for applicants">
                     </div>
                 </div>
@@ -73,7 +81,7 @@
                                 <div class="filter-label">Sort by</div>
                                 <div class="filter-content d-flex align-items-center justify-content-between p-2">
                                     <div class="title">Default</div>
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                    <ion-icon name="chevron-down-outline" class="d-flex justify-content-center align-items-center"></ion-icon>
                                 </div>
                             </div>
                         </div>
@@ -110,29 +118,29 @@
                         <div class="card-img img1"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Lennard Camarillo">Lennard Camarillo</div>
-                                <div class="position">Manager/Bartender</div>
+                                <div class="name text-truncate fw-semibold" title="Lennard Camarillo">Lennard Camarillo</div>
+                                <div class="position fw-normal">Manager/Bartender</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline" class="d-flex justify-content-center align-items-center"></ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         Lennardcamarillo@yahoo.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline" class="d-flex justify-content-center align-items-center"></ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -144,29 +152,29 @@
                         <div class="card-img img2"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Martina Holloway">Martina Holloway</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="Martina Holloway">Martina Holloway</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline" class="d-flex justify-content-center align-items-center"></ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline" class="d-flex justify-content-center align-items-center"></ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -178,29 +186,33 @@
                         <div class="card-img img3"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="Clem Fandango">Clem Fandango</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -212,29 +224,33 @@
                         <div class="card-img img4"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -246,30 +262,34 @@
                         <div class="card-img img5"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
+                                <div class="name text-truncate fw-semibold" title="jean philippe fromereze">jean philippe fromereze
                                 </div>
-                                <div class="position">Cashier</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -281,29 +301,33 @@
                         <div class="card-img img6"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="jean philippe fromereze">Khali Miller</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -315,29 +339,33 @@
                         <div class="card-img img3"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Clem Fandango">Clem Fandango</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="Clem Fandango">Clem Fandango</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -349,29 +377,33 @@
                         <div class="card-img img4"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="Patrik Fitzgerald">Patrik Fitzgerald</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -383,30 +415,34 @@
                         <div class="card-img img5"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="jean philippe fromereze">jean philippe fromereze
+                                <div class="name text-truncate fw-semibold" title="jean philippe fromereze">jean philippe fromereze
                                 </div>
-                                <div class="position">Cashier</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -418,29 +454,33 @@
                         <div class="card-img img6"></div>
                         <div class="card-details">
                             <div class="personal-info">
-                                <div class="name text-truncate" title="jean philippe fromereze">Khali Miller</div>
-                                <div class="position">Cashier</div>
+                                <div class="name text-truncate fw-semibold" title="jean philippe fromereze">Khali Miller</div>
+                                <div class="position fw-normal">Cashier</div>
                             </div>
                             <hr>
-                            <div class="contact-info">
-                                <div class="info-wrapper">
+                            <div class="contact-info fw-light">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <ion-icon name="mail-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div class="email text-truncate" title="Lennardcamarillo@yahoo.com">
                                         email@test.com
                                     </div>
                                 </div>
-                                <div class="info-wrapper">
+                                <div class="info-wrapper d-flex align-items-center">
                                     <div>
-                                        <ion-icon name="call-outline"></ion-icon>
+                                        <ion-icon name="call-outline"
+                                                  class="d-flex justify-content-center align-items-center">
+                                        </ion-icon>
                                     </div>
                                     <div>+1 800 200 300</div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="applied-date">
-                                Applied on: Feb 20,2023
+                            <div class="applied-date fw-light">
+                                Applied on: Feb 20, 2023
                             </div>
                         </div>
                     </a>
@@ -451,8 +491,9 @@
 </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+</script>
 </body>
 </html>

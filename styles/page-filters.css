@@ -1,6 +1,6 @@
 .app .search-input {
     border: 1px solid var(--body);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .app .search-input .search-icon {
@@ -12,8 +12,8 @@
     background: var(--light);
     padding: 8px;
     border: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     width: 100%;
     font-size: 14px;
     outline: none;
@@ -37,7 +37,6 @@
     color: var(--body);
     border-radius: 6px;
     font-size: 14px;
-    cursor: pointer;
 }
 
 .app .filters-section .filter-wrapper .filter-label {
@@ -45,17 +44,15 @@
     position: absolute;
     font-size: 10px;
     background: var(--light);
-    top: -8px;
-    left: 6px;
-    padding-inline: 2px;
-    font-weight: 500;
+    top: -6px;
+    left: 8px;
+    padding-inline: 3px;
 }
 
 .app .filters-section .filter-wrapper .filter-content .title,
 .app .filters-section .filter-wrapper .filter-content ion-icon {
     color: var(--body);
     font-size: 14px;
-    font-weight: 500;
 }
 
 body.dark .date-filter-wrapper input {

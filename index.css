@@ -37,18 +37,6 @@ body.dark {
     padding: var(--body-gap) var(--page-padding);
 }
 
-.app .text-truncate {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.app ion-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .app .styled-scrollbar::-webkit-scrollbar {
     width: 4px;
     height: 4px;

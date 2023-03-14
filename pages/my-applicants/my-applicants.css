@@ -60,26 +60,21 @@
 
 .app .page-body .applicant-card .card-details .personal-info .name {
     font-size: 15px;
-    font-weight: 600;
     color: var(--primary);
 }
 
 .app .page-body .applicant-card .card-details .personal-info .position {
     font-size: 14px;
     color: var(--body);
-    font-weight: 500;
 }
 
 
 .app .page-body .applicant-card .card-details .contact-info div,
 .app .page-body .applicant-card .card-details .applied-date {
     font-size: 13px;
-    font-weight: 300;
     color: var(--body);
 }
 
 .app .page-body .applicant-card .card-details .info-wrapper {
-    display: flex;
-    align-items: center;
     gap: 6px;
 }
