@@ -4,7 +4,7 @@
     right: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 3px 0 14px -1px var(--light-gray);
+    box-shadow: 3px 3px 0px -1px var(--light-gray);
     padding-inline: var(--page-padding);
     background: var(--light);
     height: 68px;
