@@ -7,7 +7,7 @@
     box-shadow: 3px 3px 0px -1px var(--light-gray);
     padding-inline: var(--page-padding);
     background: var(--light);
-    height: 68px;
+    height: var(--header-height);
 }
 
 .app header .logo {
@@ -78,9 +78,8 @@
 }
 
 .app .page-head {
-    padding-inline: var(--page-padding);
     background-color: var(--light);
-    padding-top: 84px;
+    padding: calc(var(--page-head-padding) + var(--header-height)) var(--page-padding) var(--page-head-padding) var(--page-padding);
 }
 
 .app .page-head .page-title span {

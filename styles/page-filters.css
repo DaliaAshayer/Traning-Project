@@ -1,5 +1,5 @@
 .app .search-input {
-    border: 1px solid var(--body);
+    border: 0.095rem solid var(--body);
     border-radius: 6px;
 }
 
@@ -26,7 +26,7 @@
 .app .filters-section .filter-wrapper {
     position: relative;
     border-radius: 6px;
-    border: 1px solid var(--body);
+    border: 0.095rem solid var(--body);
     cursor: pointer;
 }
 
@@ -36,7 +36,7 @@
 
 .app .filters-section .date-filter-wrapper input {
     padding: 8px;
-    border: 1px solid var(--body);
+    border: 0.095rem solid var(--body);
     background: var(--light);
     color: var(--body);
     border-radius: 6px;
