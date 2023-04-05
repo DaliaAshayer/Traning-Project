@@ -19,6 +19,10 @@
     outline: none;
 }
 
+.app .search-input input::placeholder {
+    color: #888888;
+}
+
 .app .filters-section .filter-wrapper {
     position: relative;
     border-radius: 6px;
@@ -45,7 +49,7 @@
     font-size: 10px;
     background: var(--light);
     top: -6px;
-    left: 8px;
+    left: 10px;
     padding-inline: 3px;
 }
 
@@ -57,4 +61,11 @@
 
 body.dark .date-filter-wrapper input {
     color-scheme: dark;
+}
+
+.app .filters-section .date-filter-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("../assets/calendar.svg");
+    background-size: cover;
+    width: 0.7rem;
+    height: 0.7rem;
 }
