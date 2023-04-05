@@ -37,15 +37,16 @@
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content {
+    display: grid;
+    grid-template-rows: repeat(4,6rem);
+    row-gap: 12px;
     overflow-y: auto;
-    gap: 12px;
     margin-top: 11px;
     height: calc(100vh - 314px);
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block {
     cursor: pointer;
-    min-height: 6rem;
     background-color: var(--light);
     border-radius: 6px;
     padding: 10px;
