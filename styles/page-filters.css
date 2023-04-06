@@ -59,6 +59,14 @@
     font-size: 14px;
 }
 
+.app .filters-section .filter-wrapper .filter-content .title {
+    padding-left: 10px;
+}
+
+.app .filters-section .filter-wrapper .filter-content ion-icon {
+    padding-right: 1px;
+}
+
 body.dark .date-filter-wrapper input {
     color-scheme: dark;
 }

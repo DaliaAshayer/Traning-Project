@@ -9,6 +9,8 @@
     --mobile-page-padding: 1.5rem;
     --header-height: 68px;
     --page-head-padding: 16px;
+    --applicant-card-height: 6rem;
+    --applicant-img-size: 4.5rem;
 }
 
 * {

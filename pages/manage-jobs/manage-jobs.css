@@ -38,25 +38,25 @@
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content {
     display: grid;
-    grid-template-rows: repeat(4,6rem);
     row-gap: 12px;
     overflow-y: auto;
     margin-top: 11px;
     height: calc(100vh - 314px);
+    grid-auto-rows: var(--applicant-card-height);
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block {
     cursor: pointer;
     background-color: var(--light);
     border-radius: 6px;
-    padding: 10px;
+    padding-inline: calc((var(--applicant-card-height) - var(--applicant-img-size)) / 2);
     gap: 10px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 5px;
 }
 
 .app.manage-job-page .manage-job-cols-container .manage-job-col .manage-job-col-content .applicant-block img {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: var(--applicant-img-size);
+    height: var(--applicant-img-size);
     border-radius: 4rem;
 }
 
