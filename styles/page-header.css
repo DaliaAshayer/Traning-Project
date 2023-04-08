@@ -44,9 +44,10 @@
 
 .app header .account-dropdown-menu {
     min-width: 22rem;
-    border-radius: 6px;
     padding: 11px 16px;
     background: var(--light);
+    inset: 4px 0px auto auto !important;
+    border-color: var(--light-gray);
 }
 
 .app header .account-dropdown-menu .info-container {
